@@ -16,7 +16,7 @@ public class Qno2 {
 
        System.out.println("Enter your float");
        float b=scanner.nextFloat();
-       
+
 //  long doesnt not take point value but double does
 
        System.out.println("Enter your long");
@@ -24,6 +24,9 @@ public class Qno2 {
        
        System.out.println("Enter your byte");
        byte d=scanner.nextByte();
+       
+    //    The extra scanner.nextLine(); after nextByte() (or any other next<Type>() method) reads and discards this leftover newline, effectively "clearing the buffer."
+       scanner.nextLine();
 
        System.out.println("Enter your string");
        String e=scanner.nextLine();
@@ -35,8 +38,6 @@ public class Qno2 {
        System.out.println("Your string is :" + e);
        
        
-
-
 
 
 // how to close scanner ??????
