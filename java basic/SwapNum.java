@@ -15,7 +15,7 @@ public class SwapNum {
         temp=num1;//
         num1=num2;
         num2=temp;
-        // how to swap 2 number 
+       
 
         System.out.println("The swaped number of first number is :" +num1);
         System.out.println("The swaped number of Second number is :" +num2);
