@@ -13,9 +13,8 @@ public class FactorizeNum {
 
         }
         System.out.println("Print the Final output : "+Factorial);
-
-
-
         sc.close();
-    }
+    
+    } 
+   
 }
