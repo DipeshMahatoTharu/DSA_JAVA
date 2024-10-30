@@ -24,5 +24,6 @@ public class MaximumOfThreeNumbers {
         
         GreatestNum Num=new GreatestNum();
         System.out.println("The Greatest number  is : "+Num.CalculateGreatestNumber(Num1, Num2, Num3));
+        sc.close();
     }
 }
