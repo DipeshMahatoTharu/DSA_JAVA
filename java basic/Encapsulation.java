@@ -9,6 +9,7 @@ class human {
         public int getAge(){
             return age ;
         }
+        // to get use input 
         public void setAge(int a){
             age =a;
 
