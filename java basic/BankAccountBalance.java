@@ -1,57 +1,51 @@
-// Bank Account Balance
-// For a bank account, you'll need to:
+// Write a program to model a simple bank account system.
+// Instructions:
+// Create a class BankAccount with instance variables balance.
+// Add methods deposit(double amount) and withdraw(double amount) to add or subtract money from the account.
+// In the main method, create an instance of BankAccount, perform a few deposits and withdrawals, and print the final balance.
+// 10. Student Grade Calculator
+// Description: Write a program that calculates the average grade of a student.
+// Instructions:
+// Create a class Student.
+// Add an array to hold the grades of a student and a method calculateAverage() to return the average of the grades.
+// In the main method, create an instance of Student, set a few grades, and print the average.
 
-// Create a BankAccount class with a balance variable to store the current balance.
-// Implement methods:
-// deposit(double amount): This method adds the specified amount to the balance.
-// withdraw(double amount): This method subtracts the specified amount from the balance,
-//  but only if there’s enough money (balance should not go below zero).
-// In main, create an instance of BankAccount, perform deposits and withdrawals, and print the final balance.
+
+// contructor 
 class BankAccount{
     private double balance;
 
-    public BankAccount(double initialBalance){
-        this.balance=initialBalance;
-    
+    // For public access 
+    public BankAccount(double initanceBalance){
+        this.balance=initanceBalance;
     }
 
-    public void deposit(double amount ){
-        if(amount >0 ){
+    // Method to deposite the money in your account 
+    public void deposit(double amount){
+        if(amount >0){
             balance +=amount;
-            System.out.println("Balance deposite :" + amount);
+            System.out.println("Deposited"+ amount);
+
         }else{
-            System.out.println("Invalid input ");
-
+            System.out.println("invalid deposited number");
         }
-    }
-
+// Method to withdraw money form account
         public void withdraw(double amount){
-            if( amount >0 && amount <=balance){
-                balance -=amount;
+            if(amount >0 && amount<=balance){
+                
+            }
+        }
 
 
-                System.out.println("withdrew : "+ amount );
-
-            }else{
-                System.out.println("invalid or infinitent balance in amount .");
-
-            }    
-        }   
-    
-                                                                                                                                                                                                                                                                                                                                                              
-
-    public double getBalance() {
-        return balance;
     }
+
+
+
 }
+
 
 public class BankAccountBalance {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount(1000); // Start with an initial balance
-        account.deposit(500);
-        account.withdraw(200);
         
-
-        System.out.println("Final balance: " + account.getBalance());
     }
 }
