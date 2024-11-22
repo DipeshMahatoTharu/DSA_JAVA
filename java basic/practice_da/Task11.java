@@ -20,10 +20,7 @@ public class Task11 {
         Addition addition =new Addition();
         int output=addition.Add(Num1,Num2);
         System.out.println("The Two Addition are :" +output);
-        
-
-
-
+    
         sc.close();       
     }
 }
